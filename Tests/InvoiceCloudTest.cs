@@ -14,7 +14,7 @@ public class InvoviceCloudTest<TWebDriver>:BaseTest<TWebDriver> where TWebDriver
     public void AddElementTest(int count)
     {
         browser
-            .OpenUrl<AddRemoveElementsPage>()
+            .NavigateTo<AddRemoveElementsPage>()
             .ClickAddElementButton(count)
             .DeleteElementsCount
             .Should().Be(count);    

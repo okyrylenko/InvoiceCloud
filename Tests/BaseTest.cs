@@ -13,7 +13,7 @@ namespace InvoiceCloud.Tests
         protected IWebDriver driver;
         protected WebDriverWait wait;
         protected Fixture fixture;
-        protected Browser browser;
+        protected IBrowser browser;
 
         [SetUp]
         public void SetUp()

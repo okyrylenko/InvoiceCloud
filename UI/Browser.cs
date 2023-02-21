@@ -4,7 +4,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace InvoiceCloud.UI
 {
-    public class Browser
+    public class Browser:IBrowser
     {
         protected IWebDriver driver;
         protected WebDriverWait wait;
@@ -21,7 +21,7 @@ namespace InvoiceCloud.UI
         /// <typeparam name="T"></typeparam>
         /// <param name="url"></param>
         /// <returns></returns>
-        public T OpenUrl<T>(string url = "") where T : IPage
+        public T NavigateTo<T>(string url = "") where T : IPage
         {
             driver.Navigate().GoToUrl($"https://the-internet.herokuapp.com/add_remove_elements/{url}");
             return (T)Activator.CreateInstance(typeof(T), driver, wait);

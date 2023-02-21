@@ -33,7 +33,6 @@
     <None Remove="Microsoft.Extensions.Configuration" />
     <None Remove="Microsoft.Extensions.Configuration.Json" />
     <None Remove="Selenium.WebDriver.ChromeDriver" />
-    <None Remove="UI\Pages\AddRemoveElementsPage\" />
     <None Remove="AutoFixture" />
     <None Remove="AutoFixture.NUnit3" />
     <None Remove="FluentAssertions" />
@@ -44,6 +43,5 @@
     <Folder Include="Utils\" />
     <Folder Include="UI\Pages\" />
     <Folder Include="UI\Components\" />
-    <Folder Include="UI\Pages\AddRemoveElementsPage\" />
   </ItemGroup>
 </Project>

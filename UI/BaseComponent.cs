@@ -3,7 +3,7 @@ using OpenQA.Selenium.Support.UI;
 
 namespace InvoiceCloud.UI
 {
-    public class BaseComponent:Browser
+    public class BaseComponent:Browser,IBaseComponent
     {
         public BaseComponent(IWebDriver driver, WebDriverWait wait):base(driver,wait)
         {
@@ -35,16 +35,6 @@ namespace InvoiceCloud.UI
         {
             FindElement(locator).Click();
             return this;
-        }
-
-        /// <summary>
-        /// checking if element visible on the screen or not
-        /// </summary>
-        /// <param name="locator"></param>
-        /// <returns></returns>
-        public bool IsElementVisible(By locator)
-        {
-            return this.FindElement(locator).Displayed;
         }
 
         /// <summary>
