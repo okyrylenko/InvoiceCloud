@@ -8,7 +8,7 @@ using OpenQA.Selenium.Chrome;
 namespace InvoiceCloud;
 
 [TestFixture(typeof(ChromeDriver))]
-public class InvoviceCloudTest<TWebDriver>:BaseTest<TWebDriver> where TWebDriver : IWebDriver, new()
+public class InvoviceCloudTest<TWebDriver>:BaseTest<TWebDriver> where TWebDriver : IWebDriver
 {
     [Test, AutoData]
     public void AddElementTest(int count)
