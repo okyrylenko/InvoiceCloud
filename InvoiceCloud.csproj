@@ -49,6 +49,6 @@
     <Folder Include=".github\workflows\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include=".github\workflows\github-actions-demo.yml" />
+    <None Include=".github\workflows\test.yml" />
   </ItemGroup>
 </Project>
