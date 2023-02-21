@@ -45,10 +45,5 @@
     <Folder Include="UI\Pages\" />
     <Folder Include="UI\Components\" />
     <Folder Include="UI\Pages\AddRemoveElementsPage\" />
-    <Folder Include=".github\" />
-    <Folder Include=".github\workflows\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include=".github\workflows\test.yml" />
   </ItemGroup>
 </Project>
